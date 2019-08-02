@@ -1,0 +1,114 @@
+import java.util.*;
+import java.lang.Math;
+import java.util.Scanner;
+
+class JavaApplication {
+    private static Scanner input = new Scanner(System.in);
+    
+    public static void main(String[] args) {
+        String response;
+        String answer;
+        double total;
+        
+        total = 0;
+        int count;
+        
+        count = 0;
+        System.out.println("Are you a bird lover? (yes/no)");
+        response = input.nextLine();
+        if (response.equals("yes")) {
+            System.out.println("Prove it! (true/false)");
+            System.out.println("Do you love it when they sing, whistle, and chirp?");
+            answer = input.nextLine();
+            if (answer.equals("true")) {
+                count = count + 1;
+            }
+            System.out.println("Continue? (yes/no)");
+            response = input.nextLine();
+            if (response.equals("yes")) {
+                System.out.println("Do you love it when your bird rides on your shoulder?");
+                answer = input.nextLine();
+                if (answer.equals("true")) {
+                    count = count + 1;
+                }
+                System.out.println("Continue? (yes/no)");
+                response = input.nextLine();
+                if (response.equals("yes")) {
+                    System.out.println("Do you love to watch your bird fly around?");
+                    answer = input.nextLine();
+                    if (answer.equals("true")) {
+                        count = count + 1;
+                    }
+                    System.out.println("Continue? (yes/no)");
+                    response = input.nextLine();
+                    if (response.equals("yes")) {
+                        System.out.println("Do you love to watch your bird preen and fluff?");
+                        answer = input.nextLine();
+                        if (answer.equals("true")) {
+                            count = count + 1;
+                        }
+                        System.out.println("Continue? (yes/no)");
+                        response = input.nextLine();
+                        if (response.equals("yes")) {
+                            System.out.println("Do you love to cuddle with your bird?");
+                            answer = input.nextLine();
+                            if (answer.equals("true")) {
+                                count = count + 1;
+                            }
+                            System.out.println("Continue? (yes/no)");
+                            response = input.nextLine();
+                            if (response.equals("yes")) {
+                                System.out.println("Do you love to play with your bird?");
+                                answer = input.nextLine();
+                                if (answer.equals("true")) {
+                                    count = count + 1;
+                                }
+                                System.out.println("Continue? (yes/no)");
+                                response = input.nextLine();
+                                if (response.equals("yes")) {
+                                    System.out.println("Do you love to teach your bird tricks?");
+                                    answer = input.nextLine();
+                                    if (answer.equals("true")) {
+                                        count = count + 1;
+                                    }
+                                    System.out.println("Continue? (yes/no)");
+                                    response = input.nextLine();
+                                    if (response.equals("yes")) {
+                                        System.out.println("Do you love to feed your bird?");
+                                        answer = input.nextLine();
+                                        if (answer.equals("true")) {
+                                            count = count + 1;
+                                        }
+                                        System.out.println("Continue? (yes/no)");
+                                        response = input.nextLine();
+                                        if (response.equals("yes")) {
+                                            System.out.println("Do you love to show off your bird to your friends?");
+                                            answer = input.nextLine();
+                                            if (answer.equals("true")) {
+                                                count = count + 1;
+                                            }
+                                            System.out.println("Continue? (yes/no)");
+                                            response = input.nextLine();
+                                            if (response.equals("yes")) {
+                                                System.out.println("Do you love to give your bird toys to play with?");
+                                                answer = input.nextLine();
+                                                if (answer.equals("true")) {
+                                                    count = count + 1;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            total = count;
+            System.out.println("You scored " + total + " out of 10 on the bird lover's scale!");
+        } else {
+            System.out.println("Hopefully your heart belongs to a cat or dog.");
+        }
+        System.out.println("Have a good day!");
+    }
+}
